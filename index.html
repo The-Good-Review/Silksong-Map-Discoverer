@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Silksong Map</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main id="map-container">
+
+        <canvas id="map"></canvas>
+
+        <div id="controls">
+
+    <button id="toggle-controls" title="Afficher / masquer les contrôles">
+        ☰
+    </button>
+
+    <div id="controls-content">
+
+        <div class="control-group">
+            <label for="reveal-size">
+                Taille de révélation
+            </label>
+
+            <input
+                type="range"
+                id="reveal-size"
+                min="25"
+                max="500"
+                value="150"
+            >
+
+            <span id="reveal-size-value">150 px</span>
+        </div>
+
+        <button id="marker-mode">
+            📍 Ajouter un marqueur
+        </button>
+
+        <button id="save-button">
+            💾 Sauvegarder
+        </button>
+
+        <button id="reset-button">
+            🗑️ Réinitialiser
+        </button>
+
+    </div>
+
+</div>
+
+        <div id="markers"></div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
