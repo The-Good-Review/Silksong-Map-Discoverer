@@ -23,7 +23,7 @@ mapImage.src = "assets/map.png";
 let mouseX = -1000;
 let mouseY = -1000;
 
-let revealRadius = 75;
+let revealRadius = 25;
 
 let markerMode = false;
 
